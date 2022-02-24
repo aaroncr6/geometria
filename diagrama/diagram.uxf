@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>530</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>::Triangulo_ACR
+--
+-lado1: double
+-lado2: double
+-lado3: double
+--
++Triangulo_ACR(String tipoFigura, double lado1, double lado2, double lado3): ctor
++perimetro(): double
++area(): //Utiliza la formula de Herï¿½n&#13;
+double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>10</y>
+      <w>320</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>/::FiguraGeometrica_ACR/
+--
+#tipoFigura: String
+--
++FiguraGeometrica_ACR(String tipoFigura): ctor
++area(): double
++perimetro(): double
++getTipoFigura(): String
++setTipoFigura(String tipoFigura): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>200</y>
+      <w>310</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>::Circulo_ACR
+--
+-radio: double
+~PI = 3.1416: double
+--
++Circulo_ACR(double r, String tipoFigura): ctor
++area(): double
++perimetro(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>200</y>
+      <w>410</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>::Rectangulo_ACR
+--
+-l1: double
+-l2: double
+--
++Rectangulo_ACR(String tipoFigura, double lG, double lP): ctor
++area(): double
++perimetro(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
